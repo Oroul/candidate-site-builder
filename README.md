@@ -1,4 +1,4 @@
-# cassady
+# Candidate Site Builder
 
 ## Project setup
 ```
