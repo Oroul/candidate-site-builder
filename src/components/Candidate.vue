@@ -2,7 +2,7 @@
   <div>
     <div>
       <img
-        v-bind:src="'https://twitter.com/' + candidate.twitterId + '/photo'"
+        v-bind:src="'https://avatars.io/twitter/' + candidate.twitterId + '/large'"
       />
     </div>
     <div>
