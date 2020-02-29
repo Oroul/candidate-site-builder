@@ -1,6 +1,16 @@
 <template>
   <div id="app">
-    <h1>App</h1>
+    <b-navbar id="navbar" type="dark" variant="dark">
+      <b-navbar-brand>
+        <img src="./assets/icon.svg" alt="UBI Caucus Logo" />
+        <b>OpenUBI</b>
+      </b-navbar-brand>
+      <b-navbar-nav class="caucus-link ml-auto">
+        <b-button>
+          This site is part of the <b>UBI Caucus</b>
+        </b-button>
+      </b-navbar-nav>
+    </b-navbar>
     <router-view />
   </div>
 </template>
@@ -12,25 +22,26 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  height: 100vh;
+  background: #ccc;
 }
 
-#nav {
-  padding: 30px;
+#navbar {
+  border-bottom: 0.1em solid black;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+img {
+  max-width: 1.2em;
+  padding-right: 0.4em;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.caucus-link {
+  color: white;
+}
+
+b {
+  color: lightblue;
 }
 </style>
