@@ -6,9 +6,7 @@
         <b>OpenUBI</b>
       </b-navbar-brand>
       <b-navbar-nav class="caucus-link ml-auto">
-        <b-button>
-          This site is part of the <b>UBI Caucus</b>
-        </b-button>
+        <b-button> This site is part of the <b>UBI Caucus</b> </b-button>
       </b-navbar-nav>
     </b-navbar>
     <router-view />

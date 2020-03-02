@@ -16,6 +16,7 @@
 
 <script>
 import Candidate from "../components/Candidate.vue";
+import candidates from "../candidates.json";
 
 export default {
   name: "candidates",
@@ -24,26 +25,7 @@ export default {
   },
   data() {
     return {
-      candidates: [
-        {
-          twitterId: "kp_colussi",
-          fullName: "Kevin Colussi",
-          bio: "This is a test bio",
-          keywords: "Democrat Congress NY-14 New York Progressive"
-        },
-        {
-          twitterId: "foo",
-          fullName: "Foo Bar",
-          bio: "This is a test bio 2",
-          keywords: "Foo Bar Foobar"
-        },
-        {
-          twitterId: "badrun_khan",
-          fullName: "Badrun Khan",
-          bio: "This is a test bio 3",
-          keywords: "Democrat Congress NY-14 New York Progressive"
-        }
-      ]
+      candidates: candidates
     };
   },
   methods: {

@@ -9,7 +9,7 @@
       />
       <h2 id="candidate-name">{{ candidate.fullName }}</h2>
     </div>
-      <p id="candidate-bio">{{ candidate.bio }}</p>
+    <p id="candidate-bio">{{ candidate.bio }}</p>
   </div>
 </template>
 
