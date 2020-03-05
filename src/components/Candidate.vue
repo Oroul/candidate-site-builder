@@ -3,9 +3,10 @@
     <div id="candidate-details">
       <img
         id="candidate-image"
-        v-bind:src="
+        :src="
           'https://avatars.io/twitter/' + candidate.twitterId + '/large'
         "
+        :alt="candidate.fullName + ' profile picture'"
       />
       <h2 id="candidate-name">{{ candidate.fullName }}</h2>
     </div>
