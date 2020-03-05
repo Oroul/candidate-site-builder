@@ -16,12 +16,14 @@
       </div>
       <h2 id="candidate-name">{{ candidate.fullName }}</h2>
     </div>
+    <twitter-button :candidate="candidate" />
     <p id="candidate-bio">{{ candidate.bio }}</p>
   </div>
 </template>
 
 <script>
 import VueLoadImage from "vue-load-image";
+import TwitterButton from "./TwitterButton.vue";
 
 export default {
   name: "candidate",
@@ -32,7 +34,8 @@ export default {
     };
   },
   components: {
-    "vue-load-image": VueLoadImage
+    "vue-load-image": VueLoadImage,
+    "twitter-button": TwitterButton
   }
 };
 </script>
