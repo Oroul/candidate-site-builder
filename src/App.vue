@@ -45,6 +45,7 @@ html {
   font-weight: 400;
   display: block;
   text-decoration: none;
+  font-family: "Inter";
 }
 
 .open-ubi-banner-inner {
