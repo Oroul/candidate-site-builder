@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-    <b-navbar id="navbar" type="dark" variant="dark">
-      <b-navbar-brand>
+    <a
+      class="open-ubi-banner"
+      href="https://us.openubiproject.org"
+      v-if="host !== `us.openubiproject.org`"
+    >
+      <div class="open-ubi-banner-inner">
         <img src="./assets/icon.svg" alt="UBI Caucus Logo" />
-        <b>OpenUBI</b>
-      </b-navbar-brand>
-      <b-navbar-nav class="caucus-link ml-auto">
-        <b-button> This site is part of the <b>UBI Caucus</b> </b-button>
-      </b-navbar-nav>
-    </b-navbar>
+        <span class="open-ubi-banner-text">
+          This site is part of the UBI Caucus ↗</span
+        >
+      </div>
+    </a>
     <router-view />
   </div>
 </template>
@@ -21,25 +24,61 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
 #app {
   height: 100vh;
   background: #ccc;
 }
 
-#navbar {
-  border-bottom: 0.1em solid black;
+.open-ubi-banner {
+  background: #243665;
+  color: white;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
 }
 
-img {
-  max-width: 1.2em;
-  padding-right: 0.4em;
+.open-ubi-banner-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1264px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.open-ubi-banner-inner {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 200ms ease-in-out;
+}
+
+.open-ubi-banner img {
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.open-ubi-banner:hover .open-ubi-banner-inner {
+  opacity: 1;
 }
 
 .caucus-link {
   color: white;
 }
 
-b {
-  color: lightblue;
+p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: hsl(203, 89%, 53%);
 }
 </style>
