@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "node load-candidates.js && vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "pull": "node load-json.js"
@@ -13,6 +13,8 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.5.0",
     "core-js": "^3.6.4",
+    "csv-parse": "^4.8.8",
+    "node-fetch": "^2.6.0",
     "vue": "^2.6.11",
     "vue-load-image": "^0.1.9",
     "vue-router": "^3.1.5"
