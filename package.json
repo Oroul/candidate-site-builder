@@ -7,7 +7,7 @@
     "build": "node load-candidates.js && vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "pull": "node load-json.js"
+    "pull": "node load-candidates.js"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
