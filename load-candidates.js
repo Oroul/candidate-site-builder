@@ -1,9 +1,9 @@
+require('dotenv').config()
 const fs = require("fs");
 const fetch = require("node-fetch");
 const parse = require("csv-parse/lib/sync");
 
-const url =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQo6fV7oZDDaUa0kS4QaRpMTx7BfV3x9jok2Lnbeu9u_Ttc77EX5aFGWbNmLsU0SIHpknIBSUHe2Yeu/pub?gid=1017127475&single=true&output=csv";
+const url = process.env.CANDIDATE_URL;
 
 const get_candidates = async () => {
   const csvFile = await fetch(url).then(r => r.text());
