@@ -15,7 +15,7 @@
       </p>
       <b-button
         class="btn btn-info btn-xl"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSecum17d1BhF_PBkhis6oKiw5oEAIW_VE4uepcipaKNG4ej0g/viewform"
+        href="http://setup.home.us.openubiproject.org"
       >
         New Candidate Form
       </b-button>
