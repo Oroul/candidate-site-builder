@@ -16,6 +16,7 @@
       </div>
       <h2 id="candidate-name">{{ candidate.fullName }}</h2>
     </div>
+    <span id="candidate-keywords">{{ candidate.keywords }}</span>
     <div id="contact">
       <twitter-button class="contact-button" :candidate="candidate" />
       <b-button
@@ -88,6 +89,11 @@ export default {
 
 #candidate-details {
   text-align: center;
+}
+
+#candidate-keywords {
+  text-align: center;
+  padding-bottom: 0.9em;
 }
 
 #contact {
